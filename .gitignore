@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#claude created during github deploy
+node_modules
+build
+.DS_Store
+.env
