@@ -12,6 +12,7 @@ const App = () => {
   return (
     <>
       <ScrollToTop />
+      <BrowserRouter basename="/umbralys-app">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/demos/luxury" element={<LuxuryCarRental />} />
@@ -19,7 +20,8 @@ const App = () => {
         <Route path="/demos/ecommerce" element={<EcommerceHome />} />
         <Route path="/demos/construction" element={<ConstructionDemo />} />
         <Route path="/app-store" element={<AppStore />} />
-      </Routes>
+        </Routes>
+        </BrowserRouter>
     </>
   );
 };
