@@ -19,7 +19,7 @@ const EcommerceHome = () => {
       id: 1,
       name: "Wireless Headphones",
       price: 199.99,
-      rating: 4.5,
+      rating: 5.0,
       image: wirelessHeadphonesImg,
       category: "Electronics"
     },
