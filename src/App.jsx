@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ScrollToTop from './components/ScrollToTop';  // Add this import
+import { Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import LuxuryCarRental from './pages/LuxuryCarRental';
 import MedicalPractice from './pages/MedicalPractice';
@@ -12,7 +12,6 @@ const App = () => {
   return (
     <>
       <ScrollToTop />
-      <BrowserRouter basename="/umbralys-app">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/demos/luxury" element={<LuxuryCarRental />} />
@@ -20,8 +19,7 @@ const App = () => {
         <Route path="/demos/ecommerce" element={<EcommerceHome />} />
         <Route path="/demos/construction" element={<ConstructionDemo />} />
         <Route path="/app-store" element={<AppStore />} />
-        </Routes>
-        </BrowserRouter>
+      </Routes>
     </>
   );
 };
